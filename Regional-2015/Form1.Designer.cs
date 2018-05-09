@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.filenamelabel = new System.Windows.Forms.Label();
+            this.txtFileName = new System.Windows.Forms.TextBox();
+            this.cmdChooseFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // filenamelabel
@@ -40,11 +42,30 @@
             this.filenamelabel.TabIndex = 0;
             this.filenamelabel.Text = "File Name:";
             // 
+            // txtFileName
+            // 
+            this.txtFileName.Location = new System.Drawing.Point(13, 34);
+            this.txtFileName.Name = "txtFileName";
+            this.txtFileName.ReadOnly = true;
+            this.txtFileName.Size = new System.Drawing.Size(452, 22);
+            this.txtFileName.TabIndex = 1;
+            // 
+            // cmdChooseFile
+            // 
+            this.cmdChooseFile.Location = new System.Drawing.Point(517, 33);
+            this.cmdChooseFile.Name = "cmdChooseFile";
+            this.cmdChooseFile.Size = new System.Drawing.Size(99, 23);
+            this.cmdChooseFile.TabIndex = 2;
+            this.cmdChooseFile.Text = "Choose File";
+            this.cmdChooseFile.UseVisualStyleBackColor = true;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(670, 493);
+            this.Controls.Add(this.cmdChooseFile);
+            this.Controls.Add(this.txtFileName);
             this.Controls.Add(this.filenamelabel);
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -57,6 +78,8 @@
         #endregion
 
         private System.Windows.Forms.Label filenamelabel;
+        private System.Windows.Forms.TextBox txtFileName;
+        private System.Windows.Forms.Button cmdChooseFile;
     }
 }
 
